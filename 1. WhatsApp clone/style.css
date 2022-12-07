@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-section {
+    flex-basis: 30%;
+    background-color: #202c33;
+    color: white;
+    overflow: scroll;
+
+}
+
+.black-heading {
+    width: 100%;
+    height: 9%;
+    background-color: #2a3942;
+    justify-content: space-between;
+    border-right: 2px solid #202c33;
+}
+
+.upper-icon {
+    width: 45%;
+    font-size: 1.2rem;
+    color: #aebac1;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.upper-icon i:hover {
+    color: #828e98;
+}
+
+.profile-image {
+    width: 41px;
+    height: 41px;
+    border-radius: 61%;
+    margin: auto 9px;
+}
+
+.search-bar {
+    width: 90%;
+    height: 4%;
+    margin: 5px 0px 5px 13px;
+    background-color: #2a3942;
+    color: #aebac1;
+    font-size: 0.8rem;
+    gap: 25px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.search-bar i {
+    margin-left: 10px;
+}
+
+.search-bar input {
+    border: none;
+    background-color: #2a3942;
+    color: #aebac1;
+}
+
+.contact {
+    justify-content: space-between;
+    border-bottom: 1px solid #2c353a;
+}
+
+.name {
+    font-size: 1.1rem;
+    margin: 20px 0px 0px 20px;
+}
+
+.message {
+    font-size: 0.7rem;
+}
+
+.contact .new-mess {
+    color: #00ddad;
+    margin: 25px 25px;
+    font-size: 0.7rem;
+}
+
+.new-mess .time {
+    color: rgba(0, 0, 0, 0.475);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00ddad;
+    margin-left: 24px;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.open-chat {
+    background-color: #828e98;
+
+}
+
+.t-color {
+    color: white !important;
+}
+
+/* right section */
+.right-section {
+    color: white;
+    flex-basis: 70%;
+    background: url("https://w0.peakpx.com/wallpaper/763/993/HD-wallpaper-whatsapp-g-background-doodle-pattern-patterns-thumbnail.jpg");
+    position: relative;
+}
+
+
+.right-profile {
+    margin-top: 11px;
+    position: relative;
+}
+
+.right-profile-name {
+    position: absolute;
+    top: 12px;
+}
+
+.right-upper-icon {
+    width: 45%;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #aebac1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.middle-section {
+    display: grid;
+    margin: 0px 80px 22px;
+    height: 80vh;
+}
+
+.middle-section .text {
+    max-width: fit-content;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 15px;
+    border-radius: 9px;
+    color: #e9edef;
+    font-size: .9rem;
+}
+
+.middle-section .text span {
+    justify-self: end;
+    align-self: end;
+    color: #8696a0;
+    font-size: .7rem;
+    padding-left: 12px;
+}
+
+.middle-section .left-text {
+    background-color: #202c33;
+    align-self: end;
+}
+
+.middle-section .right-text {
+    background-color: #005c4b;
+    align-self: end;
+    justify-self: end;
+}
+
+.bottom-message {
+    position: absolute;
+    bottom: 0px;
+    background-color: #2a3942;
+    font-size: 1.6rem;
+    color: #8696a0;
+    padding: 12px;
+
+}
+
+.bottom-message i {
+    margin: 5px;
+}
+
+.bottom-message input {
+    background-color: #3d4145;
+    width: 85%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin-inline: 12px;
+    padding: 12px;
+}
+
+@media only screen and (max-width:642px) {
+
+    .container {
+        min-width: 375px;
+    }
+
+    .upper-icon {
+        font-size: 1rem;
+    }
+
+    .left-section {
+        font-size: 0.9rem;
+        width: 100vw;
+        flex-basis: 100%;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    .contact .new-mess {
+        font-size: 0.7rem;
+    }
+
+    .new-mess .time {
+        font-size: 0.5rem;
+        width: 15px;
+        height: 15px;
+    }
+
+    .open-chat {
+        background-color: #202c33;
+    }
+
+}
